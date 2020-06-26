@@ -10,9 +10,9 @@ module Plot =
             Options
                 ( title = title,
                 curveType = "function",
-                width = 800,
+                width = 600,
                 height = 400,
-                vAxis = Axis(logScale = false, format="decimal", title="w_n"),
+                vAxis = Axis(logScale = true, format="decimal", title="w_n"),
                 hAxis = Axis(logScale = true, format="scientific", title="n") )
 
         plotData

@@ -35,7 +35,7 @@ namespace Crawler
 
             var sumH = 0;
             var words = NumberGenerator.G(count, absX).Select(w => w.FromBase26());
-            
+
             for (int i = 0; i < words.Count(); i++)
             {
                 var uri = "http://www."+words.ElementAt(i)+"."+domain;
@@ -56,7 +56,7 @@ namespace Crawler
         static async Task<int> Main(string[] args)
         {
             var k=4;
-            var n=30000;
+            var n=50000;
             var domain = "ufrj.br";
             await ProccessDomain(k, n, domain);
             return 0;
