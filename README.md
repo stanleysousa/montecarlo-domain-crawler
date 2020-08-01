@@ -1,13 +1,16 @@
 # montecarlo-domain-crawler
-Estimates the number of subdomains
+Estimates the number of subdomains with k or less characters and n samples using the Monte Carlo method. For more information see the [documentation](./docs/mc_crawler.pdf).
 
-## Results for k=4, n=10^5
-Found coc on n=4646
-Found ifcs on n=10493
-Found fnm on n=13466
-Found peb on n=18208
-Found biof on n=19011
-Found me on n=21044
-Found ie on n=22503
-Found lps on n=26084
-Found: 8 domains
+## How to use
+- You need [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1) runtime
+- Change [appsettings.json](./app/Worker/appsettings.json):
+- Run [Worker.csproj]: On a terminal go to [\app\Worker](./app/Worker) folder and execute "dotnet run"
+
+
+## Results for k=3, n=10^4
+dbug: Worker.Services.DomainProcessor[0] lps found on n=2365\
+dbug: Worker.Services.DomainProcessor[0] olq is invalid\
+dbug: Worker.Services.DomainProcessor[0] reu is invalid\
+dbug: Worker.Services.DomainProcessor[0] Found: 18 subdomains\
+info: Worker.Program[0] Estimated number of subdomains: 54\
+info: Worker.Program[0] Done.

@@ -1,12 +1,11 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
-namespace Crawler
+namespace Worker.Models
 {
     public static class Base26Word
     {
-        public static Dictionary<char, char> Map = new Dictionary<char, char>
+        public static Dictionary<char, char> Alphabet = new Dictionary<char, char>
             {
                 { '0', 'a' },
                 { '1', 'b' },
@@ -40,31 +39,6 @@ namespace Crawler
         {
             return (int)Math.Pow(26.0, (double)digits);
         }
-        public static string ToBase26Word(this int value)
-        {
-            string result = string.Empty;
 
-            do
-            {
-                result = Map.ElementAt(value % 26).Key + result;
-                value = value / 26;
-            }
-            while (value > 0);
-
-            return result;
-        }
-        public static string FromBase26(this int value)
-        {
-            string result = string.Empty;
-
-            do
-            {
-                result = Map.ElementAt(value % 26).Value + result;
-                value = value / 26;
-            }
-            while (value > 0);
-
-            return result;
-        }
     }
 }

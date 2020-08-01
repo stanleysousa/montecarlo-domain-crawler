@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Data", "DataHandler\DataHandler.fsproj", "{51B4911B-7518-4A4F-BDCE-14313DCBE6BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crawler", "Crawler\Crawler.csproj", "{551B0376-EA41-49B7-A24F-8C545880374C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worker", "Worker\Worker.csproj", "{551B0376-EA41-49B7-A24F-8C545880374C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
