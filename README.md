@@ -4,7 +4,7 @@ Estimates the number of subdomains with k or less characters and n samples using
 ## How to use
 - You need [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1) runtime
 - Change [appsettings.json](./app/Worker/appsettings.json):
-- Run [Worker.csproj]: On a terminal go to [\app\Worker](./app/Worker) folder and execute "dotnet run"
+- Run [Worker.csproj]: On a terminal go to [\app\MCDomainCrawler.Worker](./app/MCDomainCrawler.Worker) folder and execute "dotnet run"
 
 
 ## Results for k=3, n=10^4
