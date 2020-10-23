@@ -1,11 +1,11 @@
-using Worker.Models;
-using Worker.Services;
-using Worker.Services.Interfaces;
+using MCDomainCrawler.Worker.Models;
+using MCDomainCrawler.Worker.Services;
+using MCDomainCrawler.Worker.Services.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Worker
+namespace MCDomainCrawler.Worker
 {
     public class Startup
     {

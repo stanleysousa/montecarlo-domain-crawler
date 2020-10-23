@@ -1,4 +1,4 @@
-namespace Worker.Models{
+namespace MCDomainCrawler.Worker.Models{
     public class  Config
     {
         public string Domain { get; set; }

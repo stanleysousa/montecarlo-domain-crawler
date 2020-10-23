@@ -1,6 +1,7 @@
-namespace DataHandler
+﻿namespace MCDomainCrawler.Infrastructure
 
 module Plot =
+
     open XPlot.GoogleCharts
 
     let line x y title=

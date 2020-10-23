@@ -5,13 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Plot.fs" />
-    <Compile Include="NumberGenerator.fs" />
+    <Compile Include="Base26.fs" />
+    <Compile Include="RandomNumberGenerator.fs" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MathNet.Numerics" Version="4.11.0" />
-    <PackageReference Include="XPlot.GoogleCharts" Version="3.0.1" />
   </ItemGroup>
 
 </Project>
