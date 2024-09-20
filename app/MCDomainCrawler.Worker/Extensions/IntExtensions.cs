@@ -12,7 +12,7 @@ namespace MCDomainCrawler.Worker.Extensions
             {
                 var number = Base26.getNumber(value);
                 result = number.character + result;
-                value = number.remainder / 26;
+                value = number.remainder / Base26.baseValue ;
             }
             while (value > 0);
 
@@ -27,7 +27,7 @@ namespace MCDomainCrawler.Worker.Extensions
             {
                 var letter = Base26.getLetter(value);
                 result = letter.character + result;
-                value = letter.remainder / 26;
+                value = letter.remainder / Base26.baseValue;
             }
             while (value > 0);
 

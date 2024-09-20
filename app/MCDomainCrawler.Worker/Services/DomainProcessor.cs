@@ -33,7 +33,7 @@ namespace MCDomainCrawler.Worker.Services
             var subdomains = new Dictionary<int, string>();
 
             var sumH = 0;
-            var words = RandomNumberGenerator.createDiscreteSamples(n, coefficient).Select(w => w.ToBase26Word());
+            var words = RandomNumberGenerator.createDiscreteUniformSamples(n, coefficient).Select(w => w.ToBase26Word());
 
             for (int i = 0; i < words.Count(); i++)
             {
